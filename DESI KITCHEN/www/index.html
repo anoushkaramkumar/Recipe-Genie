@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+=======
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+>>>>>>> 6b90272497918da4a84721f20abbf1ff33cd162b
     <title>DesiKitchen</title>
     <script src="signin.js"></script>
     <meta charset="UTF-8">
     <script src="https://apis.google.com/js/client:platform.js" async defer></script>
   </head>
-
-<script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              appId      : '902687979749881',
-              xfbml      : true,
-              version    : 'v2.1'
-            });
-          };
-
-          (function(d, s, id){
-             var js, fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) {return;}
-             js = d.createElement(s); js.id = id;
-             js.src = "//connect.facebook.net/en_US/sdk.js";
-             fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
+  <body>
+    
+    <!-- facebook login -->
+    
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '902687979749881',
+          xfbml      : true,
+          version    : 'v2.1'
+        });
+      };
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+      (document, 'script', 'facebook-jssdk'));
     </script>
+    <div class="fb-login-button" data-max-rows="3" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+    
+    <!-- google+ login-->
 
-<div class="fb-login-button" data-max-rows="3" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>    <!-- google+ login-->
     <div id="status">
     </div>
     <span id="signinButton">
