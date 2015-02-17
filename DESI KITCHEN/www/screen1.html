@@ -179,5 +179,72 @@ margin-bottom: 0px;
   </tr>
 </table>
 <a style ="position: absolute; bottom: 6px; text-decoration: underline; font-style: italic;">Continue as Guest<a>
+
+
+<!-- google login -->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://apis.google.com/js/client:platform.js?onload=render" async defer></script>
+  <script>
+  function render() {
+    gapi.signin.render('customBtn', {
+      'callback': 'signinCallback',
+      'client_id=96448088764-f0qmi9999ijj23h8b4ac8i961m1mv5m1.apps.googleusercontent.com',
+      'cookie_policy=single_host_origin',
+      'request_visible_actions=http://schema.org/AddAction',
+      'scope=https://www.googleapis.com/auth/plus.login',
+      'redirect_uri=https://www.desikitchen.com/oauth2callback'
+    });
+  }
+//   $(document).ready(function() {
+//   $('#signInButton').click(function() {
+//     $(this).attr('href','https://accounts.google.com/o/oauth2/auth?scope=' +
+//       'https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login&' +
+//       'state=generate_a_unique_state_value&' +
+//       'redirect_uri=https://www.desikitchen.com/oauth2callback&'+
+//       'response_type=token' +
+//       'client_id=96448088764-f3vrmmevmi2vmh6foa44ss3ssvfhk0u7.apps.googleusercontent.com&' +
+//       'access_type=offline');
+//       return true; // Continue with the new href.
+//   });
+// });
+  </script>
+  <style type="text/css">
+    
+    #customBtn {
+      display: inline-block;
+      color: white;
+      width: 100%;
+      border-radius: 5px;
+      white-space: nowrap;
+    
+      margin-top: 2%;
+>>>>>>> f62c8cea7a0650b12d50a19f17d6d3fd28aca957
+}
+</style> 
+
+<script type="text/javascript">
+=======
+  <div id="signinButton">
+    <span class="label"></span>
+    <div id="customBtn" class="customGPlusSignIn">
+      <span  class="g-signin"
+    data-callback="signinCallback"
+    data-clientid="96448088764-f3vrmmevmi2vmh6foa44ss3ssvfhk0u7.apps.googleusercontent.com"
+    data-redirecturi="https://www.desikitchen.com/oauth2callback"
+    data-cookiepolicy="single_host_origin"
+    data-requestvisibleactions="http://schema.org/AddAction"
+    data-scope="https://www.googleapis.com/auth/plus.login"><img style = "display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 98%;" src = "gmaillogin.png"></span>
+      <span class="buttonText"></span>
+    </div>
+  </div>
+>>>>>>> f62c8cea7a0650b12d50a19f17d6d3fd28aca957
+
+
+
+</script>
 </body>
 </html>
