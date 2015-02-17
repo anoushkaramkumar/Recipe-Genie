@@ -13,7 +13,7 @@
 <script>
 window.fbAsyncInit = function() {
     FB.init({
-        appId   : 'YOUR_APP_ID',
+        appId   : '902687979749881',
         oauth   : true,
         status  : true, // check login status
         cookie  : true, // enable cookies to allow the server to access the session
@@ -71,15 +71,17 @@ function fb_login(){
              fjs.parentNode.insertBefore(js, fjs);
            }(document, 'script', 'facebook-jssdk'));
     </script>
-
     </span>
+
+<!-- google login -->
+
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
   <script src="https://apis.google.com/js/client:platform.js?onload=render" async defer></script>
   <script>
   function render() {
     gapi.signin.render('customBtn', {
       //'callback': 'signinCallback',
-      'clientid': '841077041629.apps.googleusercontent.com',
+      'clientid': '96448088764-f0qmi9999ijj23h8b4ac8i961m1mv5m1.apps.googleusercontent.com',
       'cookiepolicy': 'single_host_origin',
       'requestvisibleactions': 'http://schema.org/AddAction',
       'scope': 'https://www.googleapis.com/auth/plus.login'
