@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<body style="background:#F4B42E">
+<body onload="timeout()">
 	<div class="outer">
 	<div class="middle">
 	<div class="inner">
@@ -23,7 +23,23 @@ img {
 	bottom: 0; 
 	right: 0;
 }
+
+body {
+	background-image: url("smoothpattern.png");
+}
 </style> 
+
+<script type="text/javascript">
+
+window.onload=timeout;
+function timeout(){
+window.setTimeout("redirect()",2510)}
+
+function redirect(){
+window.location="screen1.html"
+return}
+
+</script>
 
 </body>
 </html>

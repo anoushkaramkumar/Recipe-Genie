@@ -4,16 +4,17 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>DesiKitchen</title>
     <script src="signin.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
     <script src="https://apis.google.com/js/client:platform.js" async defer></script>
   </head>
 
-<a href="#" onclick="fb_login();"><img src="login.png" border="0" alt=""></a>
+<a href="#" onclick="fb_login();"><img id="facebook" src="login.png" border="0" alt=""></a>
 
 <script>
 window.fbAsyncInit = function() {
     FB.init({
-        appId   : 'YOUR_APP_ID',
+        appId   : '902687979749881',
         oauth   : true,
         status  : true, // check login status
         cookie  : true, // enable cookies to allow the server to access the session
@@ -71,28 +72,17 @@ function fb_login(){
              fjs.parentNode.insertBefore(js, fjs);
            }(document, 'script', 'facebook-jssdk'));
     </script>
-
-    <div class="fb-login-button" data-max-rows="3" data-size="xlarge" data-show-faces="true" data-auto-logout-link="false"></div>
-    <!-- google+ login-->
-    <div id="status">
-    </div>
-    <span id="signinButton">
-      <span
-        class="g-signin"
-        data-callback="signinCallback"
-        data-clientid="96448088764-f0qmi9999ijj23h8b4ac8i961m1mv5m1.apps.googleusercontent.com"
-        data-cookiepolicy="single_host_origin"
-        data-requestvisibleactions="http://schema.org/AddAction"
-        data-scope="https://www.googleapis.com/auth/plus.login">
-      </span>
     </span>
- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+<!-- google login -->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
   <script src="https://apis.google.com/js/client:platform.js?onload=render" async defer></script>
   <script>
   function render() {
     gapi.signin.render('customBtn', {
       //'callback': 'signinCallback',
-      'clientid': '841077041629.apps.googleusercontent.com',
+      'clientid': '96448088764-f0qmi9999ijj23h8b4ac8i961m1mv5m1.apps.googleusercontent.com',
       'cookiepolicy': 'single_host_origin',
       'requestvisibleactions': 'http://schema.org/AddAction',
       'scope': 'https://www.googleapis.com/auth/plus.login'
@@ -100,49 +90,94 @@ function fb_login(){
   }
   </script>
   <style type="text/css">
+    
     #customBtn {
       display: inline-block;
-      background: #dd4b39;
       color: white;
-      width: 165px;
+      width: 100%;
       border-radius: 5px;
       white-space: nowrap;
-    }
+    
+      margin-top: 2%;
+}
     #customBtn:hover {
-      background: #e74b37;
       cursor: hand;
     }
-    span.label {
-      font-weight: bold;
+
+    img {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 98%;
     }
-    span.icon {
-      background: url('/+/images/branding/btn_red_32.png') transparent 5px 50% no-repeat;
-      display: inline-block;
-      vertical-align: middle;
-      width: 35px;
-      height: 35px;
-      border-right: #bb3f30 1px solid;
+  
+    body {
+      background: #F0E14F;
     }
-    span.buttonText {
-      display: inline-block;
-      vertical-align: middle;
-      padding-left: 35px;
-      padding-right: 35px;
-      font-size: 14px;
-      font-weight: bold;
-      /* Use the Roboto font that is loaded in the <head> */
-      font-family: 'Roboto',arial,sans-serif;
+
+    * {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
     }
+  
+  
   </style>
-  <!-- In the callback, you would hide the gSignInWrapper element on a
-  successful sign in -->
-  <div id="gSignInWrapper">
-    <span class="label">Sign in with:</span>
+
+  <div id="signinButton">
+    <span class="label"></span>
     <div id="customBtn" class="customGPlusSignIn">
-      <span class="icon"></span>
-      <span class="buttonText">Google</span>
+      <span  class="g-signin"
+    data-callback="signinCallback"
+    data-clientid="96448088764-f0qmi9999ijj23h8b4ac8i961m1mv5m1.apps.googleusercontent.com"
+    data-cookiepolicy="single_host_origin"
+    data-requestvisibleactions="http://schema.org/AddAction"
+    data-scope="https://www.googleapis.com/auth/plus.login"><img style = "display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 98%;" src = "gmaillogin.png"></span>
+      <span class="buttonText"></span>
     </div>
   </div>
 
+<h1>Users</h1>
+
+<style>
+tr td:nth-child(2){
+  text-decoration: none; 
+  color: black; 
+  padding: 30px 0px; 
+  font-size: 1.5em;
+}
+
+tr td a {
+    text-decoration: none; 
+  color: black; 
+}
+
+tr img{
+  padding: 10px 0px; 
+  width: 35%
+}
+
+td {
+  width: 10%;
+}
+
+h1 {
+margin-bottom: 0px;
+}
+</style>
+
+<table style="width:100%">
+  <tr>
+    <td style = "width: 20%"><img src= "male-306408_640.png"></td>
+    <td><a href = "https://www.google.com">Raj</a></td>    
+  </tr>
+  <tr>
+    <td style = "width: 20% "><img src= "female-306407_640.png"></td>
+    <td><a>Priya</a></td>    
+  </tr>
+</table>
+<a style ="position: absolute; bottom: 6px; text-decoration: underline; font-style: italic;">Continue as Guest<a>
 </body>
 </html>
