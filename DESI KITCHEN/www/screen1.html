@@ -8,16 +8,167 @@
     <meta charset="UTF-8">
     <script src="https://apis.google.com/js/client:platform.js" async defer></script>
   </head>
+
+<a href="#" onclick="fb_login();"><img id="facebook" src="login.png" border="0" alt=""></a>
+
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+        appId   : '902687979749881',
+        oauth   : true,
+        status  : true, // check login status
+        cookie  : true, // enable cookies to allow the server to access the session
+        xfbml   : true // parse XFBML
+    });
+
+  };
+
+function fb_login(){
+    FB.login(function(response) {
+
+        if (response.authResponse) {
+            console.log('Welcome!  Fetching your information.... ');
+            //console.log(response); // dump complete info
+            access_token = response.authResponse.accessToken; //get access token
+            user_id = response.authResponse.userID; //get FB UID
+
+            FB.api('/me', function(response) {
+                user_email = response.email; //get user email
+          // you can store this data into your database             
+            });
+
+        } else {
+            //user hit cancel button
+            console.log('User cancelled login or did not fully authorize.');
+
+        }
+    }, {
+        scope: 'publish_stream,email'
+    });
+}
+(function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+}());
+
+</script>
+
+<script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '902687979749881',
+              xfbml      : true,
+              version    : 'v2.1'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+    </script>
+    </span>
+
+<!-- google login -->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://apis.google.com/js/client:platform.js?onload=render" async defer></script>
   
-  <body>
-    <button class="signup">
-      Sign Up!
-    </button>
-    <div>
-      <button class="login">
-      Log In!
-      </button>
-    </div>
+  <style type="text/css">
     
-  </body>
+    #customBtn {
+      display: inline-block;
+      color: white;
+      width: 100%;
+      border-radius: 5px;
+      white-space: nowrap;
+    
+      margin-top: 2%;
+}
+    #customBtn:hover {
+      cursor: hand;
+    }
+
+    img {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 98%;
+    }
+  
+    body {
+      background: #F0E14F;
+    }
+
+    * {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+    }
+  
+  
+  </style>
+
+  <div id="signinButton">
+    <span class="label"></span>
+    <div id="customBtn" class="customGPlusSignIn">
+      <span  class="g-signin"
+    data-callback="signinCallback"
+    data-clientid="96448088764-f0qmi9999ijj23h8b4ac8i961m1mv5m1.apps.googleusercontent.com"
+    data-cookiepolicy="single_host_origin"
+    data-requestvisibleactions="http://schema.org/AddAction"
+    data-scope="https://www.googleapis.com/auth/plus.login"><img style = "display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 98%;" src = "gmaillogin.png"></span>
+      <span class="buttonText"></span>
+    </div>
+  </div>
+
+<h1>Users</h1>
+
+<style>
+tr td:nth-child(2){
+  text-decoration: none; 
+  color: black; 
+  padding: 30px 0px; 
+  font-size: 1.5em;
+}
+
+tr td a {
+    text-decoration: none; 
+  color: black; 
+}
+
+tr img{
+  padding: 10px 0px; 
+  width: 35%
+}
+
+td {
+  width: 10%;
+}
+
+h1 {
+margin-bottom: 0px;
+}
+</style>
+
+<table style="width:100%">
+  <tr>
+    <td style = "width: 20%"><img src= "male-306408_640.png"></td>
+    <td><a href = "https://www.google.com">Raj</a></td>    
+  </tr>
+  <tr>
+    <td style = "width: 20% "><img src= "female-306407_640.png"></td>
+    <td><a>Priya</a></td>    
+  </tr>
+</table>
+<a style ="position: absolute; bottom: 6px; text-decoration: underline; font-style: italic;">Continue as Guest<a>
+
+</body>
 </html>
