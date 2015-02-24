@@ -1,15 +1,20 @@
-<!DOCTYPE html>
+
+
+<?php
+    echo "Hello World";
+    echo "\n";
+?>
+
+
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
     <title>DesiKitchen</title>
-    <script src="signin.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
     <script src="https://apis.google.com/js/client:platform.js" async defer></script>
   </head>
 
-<a href="#" onclick="fb_login();"><img id="facebook" src="login.png" border="0" alt=""></a>
+<!-- <a href="#" onclick="fb_login();"><img id="facebook" src="login.png" border="0" alt=""></a>
 
 <script>
 window.fbAsyncInit = function() {
@@ -72,23 +77,10 @@ function fb_login(){
              fjs.parentNode.insertBefore(js, fjs);
            }(document, 'script', 'facebook-jssdk'));
     </script>
-    </span>
+    </span> -->
 
 <!-- google login -->
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-  <script src="https://apis.google.com/js/client:platform.js?onload=render" async defer></script>
-  <script>
-  function render() {
-    gapi.signin.render('customBtn', {
-      //'callback': 'signinCallback',
-      'clientid': '96448088764-f0qmi9999ijj23h8b4ac8i961m1mv5m1.apps.googleusercontent.com',
-      'cookiepolicy': 'single_host_origin',
-      'requestvisibleactions': 'http://schema.org/AddAction',
-      'scope': 'https://www.googleapis.com/auth/plus.login'
-    });
-  }
-  </script>
   <style type="text/css">
     
     #customBtn {
@@ -128,7 +120,7 @@ function fb_login(){
     <div id="customBtn" class="customGPlusSignIn">
       <span  class="g-signin"
     data-callback="signinCallback"
-    data-clientid="96448088764-f0qmi9999ijj23h8b4ac8i961m1mv5m1.apps.googleusercontent.com"
+    data-clientid="44935268954-8sggkjjp0q2j9siocidgthr327auebff.apps.googleusercontent.com"
     data-cookiepolicy="single_host_origin"
     data-requestvisibleactions="http://schema.org/AddAction"
     data-scope="https://www.googleapis.com/auth/plus.login"><img style = "display: block;
@@ -158,30 +150,29 @@ function fb_login(){
 <!-- google login -->
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-  <script src="https://apis.google.com/js/client:platform.js?onload=render" async defer></script>
   <script>
   function render() {
     gapi.signin.render('customBtn', {
-      'callback': 'signinCallback',
-      'client_id=96448088764-f0qmi9999ijj23h8b4ac8i961m1mv5m1.apps.googleusercontent.com',
+      //'callback': 'signinCallback',
+      'client_id=841077041629.apps.googleusercontent.com',
       'cookie_policy=single_host_origin',
       'request_visible_actions=http://schema.org/AddAction',
       'scope=https://www.googleapis.com/auth/plus.login',
       'redirect_uri=https://www.desikitchen.com/oauth2callback'
     });
   }
-//   $(document).ready(function() {
-//   $('#signInButton').click(function() {
-//     $(this).attr('href','https://accounts.google.com/o/oauth2/auth?scope=' +
-//       'https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login&' +
-//       'state=generate_a_unique_state_value&' +
-//       'redirect_uri=https://www.desikitchen.com/oauth2callback&'+
-//       'response_type=token' +
-//       'client_id=96448088764-f3vrmmevmi2vmh6foa44ss3ssvfhk0u7.apps.googleusercontent.com&' +
-//       'access_type=offline');
-//       return true; // Continue with the new href.
-//   });
-// });
+  $(document).ready(function() {
+  $('#signInButton').click(function() {
+    $(this).attr('href','https://accounts.google.com/o/oauth2/auth?scope=' +
+      'https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login&' +
+      'state=generate_a_unique_state_value&' +
+      'redirect_uri=https://www.desikitchen.com/oauth2callback&'+
+      'response_type=token' +
+      'client_id=44935268954-8sggkjjp0q2j9siocidgthr327auebff.apps.googleusercontent.com' +
+      'access_type=offline');
+      return true; // Continue with the new href.
+  });
+});
   </script>
   
   <style type="text/css">
@@ -227,5 +218,31 @@ h1 {
 margin-bottom: 0px;
 }
 </style>
+
+<script type="text/javascript">
+// This sample assumes a client object has been created.
+// To learn more about creating a client, check out the starter:
+//  https://developers.google.com/+/quickstart/javascript
+var request = gapi.client.plus.people.get({
+  'userId' : 'me'
+});
+
+request.execute(function(resp) {
+  console.log('ID: ' + resp.id);
+  console.log('Display Name: ' + resp.displayName);
+  console.log('Image URL: ' + resp.image.url);
+  console.log('Profile URL: ' + resp.url);
+});
+</script>
+
+<?php
+$me = $plus->people->get('me');
+echo "Display Name: {$me['displayName']}\n";
+echo "Image Url: {$me['image']['url']}\n";
+echo "Url: {$me['url']}\n";
+?>
+
+<?php echo  "ID: {$me['id']}\n";?>
+
 </body>
 </html>

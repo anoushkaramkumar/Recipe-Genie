@@ -1,0 +1,54 @@
+    #customBtn:hover {
+      cursor: hand;
+    }
+
+    img {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 98%;
+    }
+  
+    body {
+      background: #F0E14F;
+    }
+
+    * {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+    }
+
+
+    #customBtn {
+      display: inline-block;
+      color: white;
+      width: 100%;
+      border-radius: 5px;
+      white-space: nowrap;
+      margin-top: 2%;
+}
+
+tr td:nth-child(2){
+  text-decoration: none; 
+  color: black; 
+  padding: 30px 0px; 
+  font-size: 1.5em;
+}
+
+tr td a {
+    text-decoration: none; 
+  color: black; 
+}
+
+tr img{
+  padding: 10px 0px; 
+  width: 35%
+}
+
+td {
+  width: 10%;
+}
+
+h1 {
+margin-bottom: 0px;
+}
