@@ -1,11 +1,3 @@
-
-
-<?php
-    echo "Hello World";
-    echo "\n";
-?>
-
-
 <html>
 <head>
     <title>DesiKitchen</title>
