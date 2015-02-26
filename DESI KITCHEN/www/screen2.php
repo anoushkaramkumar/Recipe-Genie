@@ -9,13 +9,15 @@
   </head>
 <menu type="toolbar">
    <div id="top">
-    <menu label="File">
+    <menu label="File" style="z-index: 1; margin: 0 auto; position: relative;">
+         <span class="helper"></span>
         <command onclick="goBack()" label="New..." />
         <script>
             function goBack() {
                 window.history.back()
             }
         </script>
+         <img onclick="goBack()" label="New..." src= "arrow.png" style="margin: 6px; position: relative; display: block; width: 40px; z-index: 1;">
     </menu>
     <a href = "screen2.php">
         <menu label="Home" style="z-index: 1; margin: 0 auto; position: relative;">
