@@ -7,24 +7,7 @@
     <script src="https://apis.google.com/js/client:platform.js" async defer></script>
    <script src="index.js" async defer></script>
   </head>
-
-  <div id="signinButton">
-    <span class="label"></span>
-    <div id="customBtn" class="customGPlusSignIn">
-      <span  class="g-signin"
-    data-callback="signinCallback"
-    data-clientid="44935268954-8sggkjjp0q2j9siocidgthr327auebff.apps.googleusercontent.com"
-    data-cookiepolicy="single_host_origin"
-    data-requestvisibleactions="http://schema.org/AddAction"
-    data-scope="https://www.googleapis.com/auth/plus.login">
-    <img style = "display: block;
-      position: relative;
-      margin: 0 auto;
-      width: 98%;" src = "gmaillogin.png"></span>
-      <span class="buttonText"></span>
-    </div>
-  </div>
-
+<body>
 <h1>User</h1>
 
 
@@ -34,21 +17,6 @@
     <td><a href = "screen2.php">Raj</a></td>    
   </tr>
 </table>
-
-
-
-<!-- google login -->
-
-
-
-<?php
-$me = $plus->people->get('me');
-echo "Display Name: {$me['displayName']}\n";
-echo "Image Url: {$me['image']['url']}\n";
-echo "Url: {$me['url']}\n";
-?>
-
-<?php echo  "ID: {$me['id']}\n";?>
 
 </body>
 </html>
