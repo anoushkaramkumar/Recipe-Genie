@@ -198,29 +198,47 @@ $(document).ready(function() {
 function onSignInCallback(authResult) {
   helper.onSignInCallback(authResult);
 }
+
+var request = gapi.client.plus.people.get({
+  'userId' : 'me'
+});
+
 </script>
 <style>
 .welcome {
-display:block;
-    float:left;
-    padding: 12.5%;
-    width:auto;
-    height:auto;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    -khtml-border-radius: 50%;
-    background:#eee;
     text-align:center;
-    position: relative;
 }
 </style>
+<style>
+a {
+    color: #FF0066;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+img {
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    margin: auto !important;
+}
+
+div#profile {
+    display: block; float: left; width: 100%; height: 50%; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(50%); position: relative;
+}
+</style>
+
 </html>
+
+<?php include 'signin.php';?>
 
 <?php 
 $me = $plus->people->get('me');
-echo "ID: {$me['id']}\n";
-echo "Display Name: {$me['displayName']}\n";
-echo "Image Url: {$me['image']['url']}\n";
-echo "Url: {$me['url']}\n";
-echo "HELLO!!!!" ?>
+print "ID: {$me['id']}\n";
+print "Display Name: {$me['displayName']}\n";
+print "Image Url: {$me['image']['url']}\n";
+print "Url: {$me['url']}\n";?>
