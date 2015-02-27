@@ -24,7 +24,7 @@
     <button class="g-signin"
         data-scope="https://www.googleapis.com/auth/plus.login"
         data-requestvisibleactions="http://schemas.google.com/AddActivity"
-        data-clientId="{{ CLIENT_ID }}"
+        data-clientId="44935268954-8sggkjjp0q2j9siocidgthr327auebff.apps.googleusercontent.com"
         data-accesstype="offline"
         data-callback="onSignInCallback"
         data-theme="dark"
@@ -216,3 +216,11 @@ display:block;
 }
 </style>
 </html>
+
+<?php 
+$me = $plus->people->get('me');
+echo "ID: {$me['id']}\n";
+echo "Display Name: {$me['displayName']}\n";
+echo "Image Url: {$me['image']['url']}\n";
+echo "Url: {$me['url']}\n";
+echo "HELLO!!!!" ?>

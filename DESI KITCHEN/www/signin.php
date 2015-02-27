@@ -154,3 +154,10 @@ $app->post('/disconnect', function () use ($app, $client) {
 });
 
 $app->run();
+
+$me = $plus->people->get('me');
+echo "ID: {$me['id']}\n";
+echo "Display Name: {$me['displayName']}\n";
+echo "Image Url: {$me['image']['url']}\n";
+echo "Url: {$me['url']}\n";
+echo "HELLO!!!!" ?>
