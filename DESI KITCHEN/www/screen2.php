@@ -8,7 +8,7 @@
           <link href="screen1.css" rel="stylesheet" type="text/css">
    <script src="index.js" async defer></script>
   </head>
-<menu type="toolbar">
+<menu id="toolbar" type="toolbar">
    <div id="top">
     <menu label="File" style="z-index: 1; margin: 0 auto; position: relative;">
          <span class="helper"></span>
