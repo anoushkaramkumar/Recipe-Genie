@@ -5,8 +5,8 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
     <script src="https://apis.google.com/js/client:platform.js" async defer></script>
-          <link href="screen1.css" rel="stylesheet" type="text/css">
-   <script src="index.js" async defer></script>
+          <link href="css/screen1.css" rel="stylesheet" type="text/css">
+   <script src="js/index.js" async defer></script>
   </head>
 <menu id="toolbar" type="toolbar">
    <div id="top">
@@ -18,12 +18,12 @@
                 window.history.back()
             }
         </script>
-         <img onclick="goBack()" label="New..." src= "arrow.png" style="margin: 15px 0 0 25px; position: relative; display: block; width: 10%; z-index: 1;">
+         <img onclick="goBack()" label="New..." src= "img/arrow.png" style="margin: 15px 0 0 25px; position: relative; display: block; width: 10%; z-index: 1;">
     </menu>
     <a href = "screen2.php">
         <menu label="Home">
             <span class="helper"></span>
-            <img src= "home.png">
+            <img src= "img/home.png">
         </menu>
     </a>
     <menu label="Help">

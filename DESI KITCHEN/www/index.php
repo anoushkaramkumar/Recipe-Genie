@@ -1,7 +1,7 @@
 
 <html>
 <head>
-  <title>{{ APPLICATION_NAME }}</title>
+  <title>Recipe Genie</title>
   <script type="text/javascript">
   (function() {
     var po = document.createElement('script');
@@ -15,9 +15,9 @@
       <title>DesiKitchen</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
-      <link href="index.css" rel="stylesheet" type="text/css">
+      <link href="css/index.css" rel="stylesheet" type="text/css">
     <script src="https://apis.google.com/js/client:platform.js" async defer></script>
-   <script src="index.js" async defer></script>
+   <script src="js/index.js" async defer></script>
 </head>
 <body>
   <div id="gConnect">
