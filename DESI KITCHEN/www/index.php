@@ -90,7 +90,7 @@ var helper = (function() {
             return;
           }
           $('#profile').append(
-              $('<div class="welcome"><h2>User</h2><p><img style= "width:100px; margin:0" src=\"' + profile.image.url + '\"></p>' + '<a href="screen2.php">' + profile.displayName + '</a></div><div class="swag" style="display:none"><br />Tagline: ' +
+              $('<div class="welcome"><h2>User</h2><p><img style= "width:100px; margin:0" src=\"' + profile.image.url + '\"></p>' + '<a href="screen3.php?' +  profile.displayName +'">' + profile.displayName + '</a></div><div class="swag" style="display:none"><br />Tagline: ' +
               profile.tagline + '<br />About: ' + profile.aboutMe + '</p></div>'));
           if (profile.cover && profile.coverPhoto) {
             $('#profile').append(
