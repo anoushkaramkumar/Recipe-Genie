@@ -73,7 +73,7 @@ var helper = (function() {
         // As an example, you can troubleshoot by writing to the console:
         console.log('There was an error: ' + authResult['error']);
         $('#authResult').append('Logged out');
-        $('#authOps').hide('slow');
+        $('#authOps').hide('fast');
         $('#gConnect').show();
       }
       console.log('authResult', authResult);
