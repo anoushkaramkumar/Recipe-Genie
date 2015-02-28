@@ -90,7 +90,7 @@ CREATE TABLE `Inventory` (
 
 LOCK TABLES `Inventory` WRITE;
 /*!40000 ALTER TABLE `Inventory` DISABLE KEYS */;
-INSERT INTO `Inventory` VALUES (1,1,'Potatoes',1),(2,1,'Onions',1),(3,1,'Tomatoes',1),(4,1,'Ginger',1),(5,1,'Cucumber',1),(6,1,'Broccoli',1),(7,1,'Cauliflower',1),(8,1,'Garlic',1),(9,1,'Cheese',1),(10,1,'Bread',1),(11,1,'Oil',2),(12,1,'Sour Cream',2),(13,1,'Lettuce',2),(14,1,'Tofu',2),(15,1,'Paneer',2),(16,1,'Cream Cheese',2),(17,1,'Butter',2),(18,1,'Peas',2),(19,1,'Carrots',2),(20,1,'Green Beans',2),(21,1,'Lentils',3),(22,1,'Pickles',3),(23,1,'Bananas',3),(24,1,'Apples',3),(25,1,'Oranges',3),(26,1,'Grapes',3),(27,1,'Spinach',3),(28,1,'Saffron',3),(29,1,'Celery',3),(30,1,'Brussel Sprouts',3);
+INSERT INTO `Inventory` VALUES (1,1,'Potatoes',1),(2,1,'Onions',1),(3,1,'Tomatoes',1),(4,1,'Ginger',1),(5,1,'Cucumber',1),(6,1,'Broccoli',1),(7,1,'Cauliflower',1),(8,1,'Garlic',1),(9,1,'Cheese',1),(10,1,'Bread',1),(11,1,'Oil',2),(12,1,'Sour Cream',2),(13,1,'Lettuce',2),(14,1,'Tofu',2),(15,1,'Paneer',2),(16,1,'Cream Cheese',2),(17,1,'Butter',2),(18,1,'Peas',2),(19,1,'Carrots',2),(20,1,'Green Beans',2),(21,1,'Lentils',3),(22,1,'Pickles',3),(23,1,'Bananas',3),(24,1,'Apples',3),(25,1,'Oranges',3),(26,1,'Grapes',3),(27,1,'Spinach',3),(28,1,'Saffron',3),(29,1,'Celery',3),(30,1,'Brussel Sprouts',3),(31,1,'Beets',4);
 /*!40000 ALTER TABLE `Inventory` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -168,7 +168,7 @@ CREATE TABLE `User` (
 
 LOCK TABLES `User` WRITE;
 /*!40000 ALTER TABLE `User` DISABLE KEYS */;
-INSERT INTO `User` VALUES (1,'Anoushka Ramkumar','F','ankyisthebest@gmail.com'),(2,'Vedant Rautela','M','v.rautela01@gmail.com'),(3,'Anand Shetler','M','anandshetler@gmail.com');
+INSERT INTO `User` VALUES (1,'Anoushka%20Ramkumar','F','ankyisthebest@gmail.com'),(2,'Vedant Rautela','M','v.rautela01@gmail.com'),(3,'Anand%20Shetler','M','anandshetler@gmail.com'),(4,'Ram%20Ganesan%20(Sooryen%20rganesan)','M','ram@sooryen.com');
 /*!40000 ALTER TABLE `User` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -181,4 +181,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-02-28 11:48:53
+-- Dump completed on 2015-02-28 13:02:04
