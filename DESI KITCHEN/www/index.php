@@ -21,6 +21,8 @@
 </head>
 <body>
   <div id="gConnect">
+    <h3 id="welcome12">Welcome to Recipe Genie!</h3>
+    <h4 id="welcome12">Sign into Google to begin.</h4>
     <button class="g-signin"
         data-scope="https://www.googleapis.com/auth/plus.login"
         data-requestvisibleactions="http://schemas.google.com/AddActivity"
