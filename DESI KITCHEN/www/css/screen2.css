@@ -1,0 +1,17 @@
+table {
+    margin-top: 15px;
+    width:100%; 
+    font-size: 500%;
+    font-weight: lighter;
+    box-shadow: 4px;
+    font-family: sans-serif;
+}
+.fsttd {
+	background: lightgrey;
+}
+.sndtd{
+	background: white;
+}
+td {
+	padding:40px 40px 40px 30px;
+}
