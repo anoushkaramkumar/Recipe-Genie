@@ -10,7 +10,7 @@
   </head>
 <menu id="toolbar" type="toolbar">
    <div id="top">
-    <menu label="File" style="z-index: 1; margin: 0 auto; position: relative;">
+    <menu label="File">
          <span class="helper"></span>
         <command onclick="goBack()" label="New..." />
         <script>
@@ -21,18 +21,18 @@
          <img onclick="goBack()" label="New..." src= "arrow.png" style="margin: 15px 0 0 25px; position: relative; display: block; width: 10%; z-index: 1;">
     </menu>
     <a href = "screen2.php">
-        <menu label="Home" style="z-index: 1; margin: 0 auto; position: relative;">
+        <menu label="Home">
             <span class="helper"></span>
-            <img src= "home.png" style="margin: 10px auto; position: relative; display: block; width: 10%; z-index: 1;">
+            <img src= "home.png">
         </menu>
     </a>
     <menu label="Help">
         <command href="help.html" label="Help" />
         <command href="about.html" label="About" />
     </menu>
-    <menu label="Plus" style="z-index: 1; margin: 0 auto; position: relative;">
+    <menu label="Plus">
         <span class="helper"></span>
-        <img src= "img/plus.png" style="margin: auto; position: absolute; right: 32px; display: block; width: 10%; z-index: 1;">
+        <img src= "img/plus.png">
     </menu>
 </div>
 </menu>
