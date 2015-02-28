@@ -4,13 +4,12 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
   <meta charset="UTF-8">
   <script src="https://apis.google.com/js/client:platform.js" async defer></script>
-  <link href="css/screen1.css" rel="stylesheet" type="text/css">
   <script src="js/index.js" async defer></script>
 </head>
 <body style="background:#F7CB71">
+  <div id="top">
   <menu id="toolbar" type="toolbar">
-   <div id="top">
-    <menu label="File">
+    <menuitem label="File" class="arrow">
          <span class="helper"></span>
         <command onclick="goBack()" label="New..." />
         <script>
@@ -18,48 +17,30 @@
                 window.history.back()
             }
         </script>
-         <img onclick="goBack()" label="New..." src= "img/arrow.png" style="margin: 15px 0 0 25px; position: relative; display: block; width: 10%; z-index: 1;">
-    </menu>
+        <img onclick="goBack()" label="New..." src= "img/arrow.png">
+    </menuitem>
     <a href = "screen2.php">
-        <menu label="Home">
+        <menuitem label="Home" class="home">
             <span class="helper"></span>
             <img src= "img/home.png">
-        </menu>
+        </menuitem>
     </a>
-    <menu label="Help">
-        <command href="help.html" label="Help" />
-        <command href="about.html" label="About" />
-    </menu>
-    <menu label="Plus">
+    <menuitem label="Help">
+        <command href="help.html" label="Help"/>
+        <command href="about.html" label="About"/>
+    </menuitem>
+    <menuitem label="Plus" class="plus">
         <span class="helper"></span>
         <img src= "img/plus.png">
-    </menu>
-</div>
+    </menuitem>
 </menu>
-<table>
-  <tr>
-    <td class="fsttd">Milk</td>
-  </tr>
-  <tr>
-    <td class="sndtd">Eggs</td>
-  </tr>
-  <tr>
-    <td class="fsttd">Milk</td>
-  </tr>
-  <tr>
-    <td class="sndtd">Eggs</td>
-  </tr>
-  <tr>
-    <td class="fsttd">Milk</td>
-  </tr>
-  <tr>
-    <td class="sndtd">Eggs</td>
-  </tr>
-  <tr>
-    <td class="fsttd">Milk</td>
-  </tr>
-  <tr>
-    <td class="sndtd">Eggs</td>
-  </tr>
-</table>
-<button>
+</div>
+<ul class="inventory" style="list-style-type:none; margin-left:-40px;">
+  <li class="frsli">Milk</li>
+  <li class="secli">Eggs</li>
+  <li class="frsli">Milk</li>
+  <li class="secli">Eggs</li>
+  <li class="frsli">Milk</li>
+  <li class="secli">Eggs</li>
+</ul>
+<div style="text-align:center;"><button type="submit" class="create">Make My Meal!</button></div>
