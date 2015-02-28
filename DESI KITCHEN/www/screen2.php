@@ -1,14 +1,14 @@
+<head>
+  <title>DesiKitchen</title>
+  <link href="css/screen2.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+  <link href="css/screen1.css" rel="stylesheet" type="text/css">
+  <script src="js/index.js" async defer></script>
+</head>
 <body style="background:#F7CB71">
-    <head>
-    <title>DesiKitchen</title>
-    <link href="css/screen2.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
-    <meta charset="UTF-8">
-    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
-          <link href="css/screen1.css" rel="stylesheet" type="text/css">
-   <script src="js/index.js" async defer></script>
-  </head>
-<menu id="toolbar" type="toolbar">
+  <menu id="toolbar" type="toolbar">
    <div id="top">
     <menu label="File">
          <span class="helper"></span>
