@@ -90,7 +90,7 @@ var helper = (function() {
             return;
           }
           $('#profile').append(
-              $('<div class="welcome"><h2>User</h2><p><img style= "width:100px; margin:0" src=\"' + profile.image.url + '\"></p>' + '<a href="screen3.php?' +  profile.displayName +'">' + profile.displayName + '</a></div><div class="swag" style="display:none"><br />Tagline: ' +
+              $('<div class="welcome"><h2 style="font-size: 400%; margin-bottom: 5px;">User</h2><p><img style= "width: 32%; margin:0" src=\"' + profile.image.url + '\"></p>' + '<a style="font-size: 400%;" href="screen3.php?' +  profile.displayName +'">' + profile.displayName + '</a></div><div class="swag" style="display:none"><br />Tagline: ' +
               profile.tagline + '<br />About: ' + profile.aboutMe + '</p></div>'));
           if (profile.cover && profile.coverPhoto) {
             $('#profile').append(
@@ -231,6 +231,10 @@ img {
 
 div#profile {
     display: block; float: left; width: 100%; height: 50%; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(50%); position: relative;
+}
+
+#welcome12{
+  font-size: 400%;
 }
 </style>
 
