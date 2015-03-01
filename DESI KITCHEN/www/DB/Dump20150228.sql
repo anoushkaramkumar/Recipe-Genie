@@ -27,7 +27,11 @@ DROP TABLE IF EXISTS `Directions`;
 CREATE TABLE `Directions` (
   `DirectionsID` int(11) NOT NULL,
   `Directions` text,
-  PRIMARY KEY (`DirectionsID`)
+  `recipeID` int(11) DEFAULT NULL,
+  `recipename` int(11) DEFAULT NULL,
+  PRIMARY KEY (`DirectionsID`),
+  KEY `recipename_idx` (`recipeID`),
+  CONSTRAINT `fk_recipeID` FOREIGN KEY (`recipeID`) REFERENCES `Recipe` (`RecipeID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -37,7 +41,7 @@ CREATE TABLE `Directions` (
 
 LOCK TABLES `Directions` WRITE;
 /*!40000 ALTER TABLE `Directions` DISABLE KEYS */;
-INSERT INTO `Directions` VALUES (1,'Cook the food'),(2,'Wait for food to cook itself');
+INSERT INTO `Directions` VALUES (1,'Cook the food',NULL,NULL),(2,'Wait for food to cook itself',NULL,NULL);
 /*!40000 ALTER TABLE `Directions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,7 +84,8 @@ CREATE TABLE `Inventory` (
   `ItemUser` int(11) DEFAULT NULL,
   PRIMARY KEY (`InventoryID`),
   KEY `ItemUser` (`ItemUser`),
-  CONSTRAINT `inventory_ibfk_1` FOREIGN KEY (`ItemUser`) REFERENCES `User` (`UserID`)
+  CONSTRAINT `inventory_ibfk_1` FOREIGN KEY (`ItemUser`) REFERENCES `User` (`UserID`),
+  CONSTRAINT `inventory_ibfk_2` FOREIGN KEY (`ItemUser`) REFERENCES `User` (`UserID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -168,7 +173,7 @@ CREATE TABLE `User` (
 
 LOCK TABLES `User` WRITE;
 /*!40000 ALTER TABLE `User` DISABLE KEYS */;
-INSERT INTO `User` VALUES (1,'Anoushka%20Ramkumar','F','ankyisthebest@gmail.com'),(2,'Vedant Rautela','M','v.rautela01@gmail.com'),(3,'Anand%20Shetler','M','anandshetler@gmail.com'),(4,'Ram%20Ganesan%20(Sooryen%20rganesan)','M','ram@sooryen.com');
+INSERT INTO `User` VALUES (1,'Anoushka%20Ramkumar','F','ankyisthebest@gmail.com'),(2,'Vedant%20Rautela','M','v.rautela01@gmail.com'),(3,'Anand%20Shetler','M','anandshetler@gmail.com'),(4,'Ram%20Ganesan%20(Sooryen%20rganesan)','M','ram@sooryen.com');
 /*!40000 ALTER TABLE `User` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -181,4 +186,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-02-28 13:02:04
+-- Dump completed on 2015-03-01 11:13:08
