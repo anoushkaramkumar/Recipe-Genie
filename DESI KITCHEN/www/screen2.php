@@ -35,12 +35,18 @@
     </menuitem>
 </menu>
 </div>
+<form>
 <ul class="inventory" style="list-style-type:none; margin-left:-40px;">
-  <li class="frsli">Milk</li>
-  <li class="secli">Eggs</li>
-  <li class="frsli">Milk</li>
-  <li class="secli">Eggs</li>
-  <li class="frsli">Milk</li>
-  <li class="secli">Eggs</li>
+  <li class="frsli">Milk<input type="checkbox"/></li>
+  <li class="secli">Eggs<input type="checkbox"/></li>
+  <li class="frsli">Milk<input type="checkbox"/></li>
+  <li class="secli">Eggs<input type="checkbox"/></li>
+  <li class="frsli">Milk<input type="checkbox"/></li>
+  <li class="secli">Eggs<input type="checkbox"/></li>
+  <li class="frsli">Milk<input type="checkbox"/></li>
+  <li class="secli">Eggs<input type="checkbox"/></li>
+  <li class="frsli">Milk<input type="checkbox"/></li>
+  <li class="secli">Eggs<input type="checkbox"/></li>
 </ul>
-<div style="text-align:center;"><button type="submit" class="create">Make My Meal!</button></div>
+<button type="submit" class="myButton">Add Ingredients</button>
+</form>

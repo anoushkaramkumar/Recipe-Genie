@@ -134,6 +134,7 @@ $("body").html($("body").html().replace(/%20/g,'<b> </b>'));
 	display: block;
 	margin: auto;
 	margin-top: 10px;
+  width: 95%;
 }
 .myButton:hover {
 	background-color:#452c1e;
