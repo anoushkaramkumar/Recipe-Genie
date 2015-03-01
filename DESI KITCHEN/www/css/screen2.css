@@ -125,8 +125,8 @@ input:checked:after {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Raleway;
-	font-size:100%;
-	padding:20px 26px;
+	font-size: 135%;
+	padding: 16px 24px;
 	text-decoration:none;
 	text-align: center;
 	text-shadow:1px 1px 7px #400a03;
@@ -222,3 +222,7 @@ input:checked:after {
 }
 
 .close:hover { background: #00d9ff; }
+
+a {
+color: white !important;
+}
