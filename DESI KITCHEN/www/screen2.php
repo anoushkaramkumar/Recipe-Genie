@@ -1,5 +1,6 @@
 <head>
   <title>DesiKitchen</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
   <link href="css/screen2.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
   <meta charset="UTF-8">
