@@ -1,5 +1,5 @@
 .inventory {
-    margin-top: 15px;
+    margin-top: 7%;
     width:100%; 
     font-size: 100%;
     font-weight: lighter;
@@ -108,8 +108,7 @@ img {
 	position: relative;
 	display: block;
 	margin: auto;
-	margin-top: -50px;
-	width: 100%;
+	width: 50%;
 }
 .myButton:active {
 	position:relative;

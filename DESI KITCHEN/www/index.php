@@ -38,9 +38,16 @@
     <p style="display:none;">This data is retrieved client-side by using the Google JavaScript API
     client library.</p>
     <div id="profile"></div>
-
-  
   </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div style="text-align:center;" class="signout"><button style="color:white; background-color:#E63E3E; padding:10px; border-radius:3px; box-shadow:none; border:none;" id="logout">Logout</button></div>
+<script>
+document.getElementById("logout").onclick = function() {signOut();}
+function signOut() {
+  gapi.auth.signOut;
+  location.href="index.php";
+}
+</script>
 </body>
 <script type="text/javascript">
 var helper = (function() {
