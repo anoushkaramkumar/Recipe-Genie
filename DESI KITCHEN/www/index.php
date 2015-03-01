@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Recipe Genie</title>
-  <script type="text/javascript">
+<meta name="viewport" content="initial-scale=2.0, maximum-scale=2.0">  <script type="text/javascript">
   (function() {
     var po = document.createElement('script');
     po.type = 'text/javascript'; po.async = true;
@@ -12,7 +12,6 @@
   })();
   </script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" ></script>
-      <title>DesiKitchen</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
       <link href="css/index.css" rel="stylesheet" type="text/css">
@@ -32,9 +31,6 @@
         data-theme="dark"
         data-cookiepolicy="single_host_origin">
     </button>
-<body>
-
-</body>
   </div>
   <div id="authOps" style="display:none">
 
