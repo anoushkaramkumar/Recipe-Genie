@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Recipe Genie</title>
-<meta name="viewport" content="initial-scale=2.0, maximum-scale=2.0">  <script type="text/javascript">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">  <script type="text/javascript">
   (function() {
     var po = document.createElement('script');
     po.type = 'text/javascript'; po.async = true;
@@ -20,8 +20,8 @@
 </head>
 <body>
   <div id="gConnect">
-    <h3 id="welcome12">Welcome to Recipe Genie!</h3>
-    <h4 id="welcome12">Sign into Google to begin.</h4>
+    <h3 style="font-size:100%" id="welcome12">Welcome to Recipe Genie!</h3>
+    <h4 style="font-size:100%" id="welcome12">Sign into Google to begin.</h4>
     <button class="g-signin"
         data-scope="https://www.googleapis.com/auth/plus.login"
         data-requestvisibleactions="http://schemas.google.com/AddActivity"
@@ -86,7 +86,7 @@ var helper = (function() {
             return;
           }
           $('#profile').append(
-              $('<div class="welcome"><h2 style="font-size: 400%; margin-bottom: 5px;">User</h2><p><img style= "width: 32%; margin:0" src=\"' + profile.image.url + '\"></p>' + '<a style="font-size: 400%;" href="screen3.php?' +  profile.displayName +'">' + profile.displayName + '</a></div><div class="swag" style="display:none"><br />Tagline: ' +
+              $('<div class="welcome"><h2 style="font-size: 100%; margin-bottom: 5px;">User</h2><p><img style= "width: 32%; margin:0" src=\"' + profile.image.url + '\"></p>' + '<a style="font-size: 100%;" href="screen3.php?' +  profile.displayName +'">' + profile.displayName + '</a></div><div class="swag" style="display:none"><br />Tagline: ' +
               profile.tagline + '<br />About: ' + profile.aboutMe + '</p></div>'));
           if (profile.cover && profile.coverPhoto) {
             $('#profile').append(
