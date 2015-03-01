@@ -22,22 +22,20 @@
 	font-weight: 100;
 }
 #toolbar {
-	width: 100%;
+	width: 103%;
 	margin: 0;
-	padding: 0;
+	padding: 2%;
 	top: 0;
 	background: white;
 	left: 0;
-	height: 7%;
 }
 #top {
-	height: 85px;    
-    width: 93.5%;
+	height: 35px;    
+    width: 100%;
     white-space: nowrap;
     text-align: center; 
     margin: 0;
     background-color: white;
-    padding: 30px;
     max-width: 93.5%;
 }
 body {
@@ -50,8 +48,8 @@ body {
 }
 img {
     vertical-align: middle;
-    max-height: 80px;
-    max-width: 80px;
+    max-height: 30px;
+    max-width: 30px;
 }
 .home{
 	margin: 5% 33%;
@@ -136,7 +134,8 @@ input:checked:after {
 	display: block;
 	margin: auto;
 	margin-top: 10px;
-  width: 95%;
+  
+	width: 44%;
 }
 .myButton:hover {
 	background-color:#452c1e;
@@ -147,7 +146,7 @@ input:checked:after {
 }
 
 #inventoryitems {
-	line-height: 150px;
+	line-height: 60px;
 	display: block;
 	vertical-align: middle;
 	background: #FF9933;
@@ -164,6 +163,7 @@ input:checked:after {
 	display: inline-block;
 	width: 100%;
 	position: relative;
+	margin-top: 7%;
 	background: white;
 }
 
@@ -174,9 +174,9 @@ input:checked:after {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(66, 24, 2, 0.81);
   z-index: 99999;
-  font-size: 350%;
+  font-size: 100%;
   opacity:0;
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
@@ -190,34 +190,35 @@ input:checked:after {
 }
 
 .modalDialog > div {
-  width: 750px;
+  width: 80%;
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
   background: #fff;
   background: -moz-linear-gradient(#fff, #999);
-  background: -webkit-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #F7BF56);
   background: -o-linear-gradient(#fff, #999);
 }
 
 .close {
-  background: #606061;
+  background: #DFCE14;
   color: #FFFFFF;
-  line-height: 25px;
+  line-height: 55px;
   position: absolute;
   right: -12px;
   text-align: center;
   top: -10px;
-  width: 24px;
+  width: 54px;
   text-decoration: none;
   font-weight: bold;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
-  border-radius: 12px;
+  border-radius: 112px;
   -moz-box-shadow: 1px 1px 3px #000;
-  -webkit-box-shadow: 1px 1px 3px #000;
-  box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #DFCE14;
+  box-shadow: 1px 1px 3px #DFCE14;
+  font-size: 35px;
 }
 
 .close:hover { background: #00d9ff; }

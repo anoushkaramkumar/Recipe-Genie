@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Recipe Genie</title>
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">  <script type="text/javascript">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">  
+<script type="text/javascript">
   (function() {
     var po = document.createElement('script');
     po.type = 'text/javascript'; po.async = true;
@@ -20,7 +21,7 @@
 </head>
 <body>
   <div id="gConnect">
-    <h3 style="font-size:100%" id="welcome12">Welcome to Recipe Genie!</h3>
+    <h3 style="font-size:150%" id="welcome12">Welcome to Recipe Genie!</h3>
     <h4 style="font-size:100%" id="welcome12">Sign into Google to begin.</h4>
     <button class="g-signin"
         data-scope="https://www.googleapis.com/auth/plus.login"
