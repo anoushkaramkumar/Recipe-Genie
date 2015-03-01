@@ -41,11 +41,13 @@
         <command href="help.html" label="Help"/>
         <command href="about.html" label="About"/>
     </menuitem>
+    <a href="#openModal">
     <menuitem label="Plus" class="plus">
         <span class="helper"></span>
         <img src= "img/plus.png">
-    </menuitem>
+    </menuitem></a>
 </menu>
+
 </div>
 <div id="inventorytable">
 <?PHP
@@ -91,58 +93,14 @@ mysql_close($db_handle);
 $("body").html($("body").html().replace(/%20/g,'<b> </b>'));
 
 </script>
-<style>
-#inventoryitems {
-	line-height: 150px;
-	display: block;
-	vertical-align: middle;
-	background: #FF9933;
-	padding-left: 20px;
-	font-size: 400%;
-	font-family: Raleway;
-}
 
-#inventoryitems:nth-child(odd) {
-	background: #FFFF99;
-}
-
-#inventorytable {
-	display: inline-block;
-	width: 100%;
-	position: relative;
-	background: white;
-}
-</style>
 <a href="screen2.php" class="myButton">Make My Meal!</a>
-
-<style>
-.myButton {
-	background-color:#ff9969;
-	-moz-border-radius:42px;
-	-webkit-border-radius:42px;
-	border-radius:42px;
-	border:3px solid #ffffff;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Raleway;
-	font-size:400%;
-	padding:20px 26px;
-	text-decoration:none;
-	text-align: center;
-	text-shadow:1px 1px 7px #400a03;
-	position: relative;
-	display: block;
-	margin: auto;
-	margin-top: 10px;
-  width: 95%;
-}
-.myButton:hover {
-	background-color:#452c1e;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-</style>
-
+  <div id="openModal" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2>Add more items!</h2>
+      <p>Here you can add more items to your inventory!</p>
+      <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+    </div>
+  </div>
 </html>
