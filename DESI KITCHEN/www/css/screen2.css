@@ -4,14 +4,14 @@
     font-size: 100%;
     font-weight: lighter;
     box-shadow: 4px;
-    font-family: sans-serif;
+    font-family: Raleway;
     display: block;
-    line-height: 150px;
+    line-height: 60px;
 }
 .frsli {
 	background: lightgrey;
 	padding-left: 20px;
-	line-height: 150px;
+	line-height: 60px;
 	color: olive;
 	font-weight: 100;
 }
@@ -63,14 +63,14 @@ img {
 input {
 	-webkit-appearance: none;
 	background-color: #fafafa;
-	border: 4px solid olive;
+	border: 2px solid olive;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
 	display: inline-block;
 	position: absolute;
-	width:60px;
-	height:60px;
-	margin-top: 32px;
-	margin-left: 70%;
+	width:20px;
+	height:20px;
+	margin-top: 15px;
+	margin-left: 60%;
 	text-align: center;
 }
 input:active, input:checked:active {
@@ -79,16 +79,16 @@ input:active, input:checked:active {
 
 input:checked {
 	background-color: #e9ecee;
-	border: 4px solid olive;
+	border: 2px solid olive;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
 	color: olive;
 }
 input:checked:after {
 	content: '\2714';
-	font-size: 45px;
+	font-size: 15px;
 	position: absolute;
 	top: 0px;
-	left: 5px;
+	left: 2px;
 	color: olive;
 }
 .myButton {
