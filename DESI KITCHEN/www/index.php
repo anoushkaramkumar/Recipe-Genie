@@ -38,9 +38,16 @@
     <p style="display:none;">This data is retrieved client-side by using the Google JavaScript API
     client library.</p>
     <div id="profile"></div>
-
-  
   </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div style="text-align:center;" class="signout"><button style="color:white; background-color:#E63E3E; padding:10px; border-radius:3px; box-shadow:none; border:none;" id="logout">Logout</button></div>
+<script>
+document.getElementById("logout").onclick = function() {signOut();}
+function signOut() {
+  gapi.auth.signOut;
+  location.href="index.php";
+}
+</script>
 </body>
 <script type="text/javascript">
 var helper = (function() {
@@ -87,7 +94,7 @@ var helper = (function() {
             return;
           }
           $('#profile').append(
-              $('<div class="welcome"><h2 style="margin-bottom: 5px;">User</h2><p><img style= "width: 24%; margin:0" src=\"' + profile.image.url + '\"></p>' + '<a href="screen3.php?' +  profile.displayName +'">' + profile.displayName + '</a></div><div class="swag" style="display:none"><br />Tagline: ' +
+              $('<div class="welcome"><h2 style="font-size: 100%; margin-bottom: 5px;">User</h2><p><img style= "width: 32%; margin:0" src=\"' + profile.image.url + '\"></p>' + '<a style="font-size: 100%;" href="screen3.php?' +  profile.displayName +'">' + profile.displayName + '</a></div><div class="swag" style="display:none"><br />Tagline: ' +
               profile.tagline + '<br />About: ' + profile.aboutMe + '</p></div>'));
           if (profile.cover && profile.coverPhoto) {
             $('#profile').append(

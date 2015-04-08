@@ -38,6 +38,7 @@
 </div>
 <form>
 <ul class="inventory" style="list-style-type:none; margin-left:-40px;">
+<<<<<<< HEAD
   <li class="frsli">Milk<input class= "checkbox1" type="checkbox"/></li>
   <li class="secli">Eggs<input class= "checkbox1" type="checkbox"/></li>
   <li class="frsli">Milk<input class= "checkbox1" type="checkbox"/></li>
@@ -48,6 +49,18 @@
   <li class="secli">Eggs<input class= "checkbox1" type="checkbox"/></li>
   <li class="frsli">Milk<input class= "checkbox1" type="checkbox"/></li>
   <li class="secli">Eggs<input class= "checkbox1" type="checkbox"/></li>
+=======
+  <li class="frsli">Milk<input class="checkbox" type="checkbox"/></li>
+  <li class="secli">Eggs<input class="checkbox" type="checkbox"/></li>
+  <li class="frsli">Milk<input class="checkbox" type="checkbox"/></li>
+  <li class="secli">Eggs<input class="checkbox" type="checkbox"/></li>
+  <li class="frsli">Milk<input class="checkbox" type="checkbox"/></li>
+  <li class="secli">Eggs<input class="checkbox" type="checkbox"/></li>
+  <li class="frsli">Milk<input class="checkbox" type="checkbox"/></li>
+  <li class="secli">Eggs<input class="checkbox" type="checkbox"/></li>
+  <li class="frsli">Milk<input class="checkbox" type="checkbox"/></li>
+  <li class="secli">Eggs<input class="checkbox" type="checkbox"/></li>
+>>>>>>> 6b746a7536df019093fec6f36eb230788ca47bc8
 </ul>
 <button type="submit" class="myButton">Add Ingredients</button>
 </form>

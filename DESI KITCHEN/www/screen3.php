@@ -24,7 +24,13 @@
   <menu id="toolbar" type="toolbar">
     <menuitem label="File" class="arrow">
          <span class="helper"></span>
-       <a href="index.php"><img onclick="goBack()" label="New..." src= "img/arrow.png"></a>
+        <command onclick="goBack()" label="New..." />
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+        </script>
+        <img onclick="goBack()" label="New..." src= "img/arrow.png">
     </menuitem>
     <a href = "screen2.php">
         <menuitem label="Home" class="home">
@@ -36,10 +42,11 @@
         <command href="help.html" label="Help"/>
         <command href="about.html" label="About"/>
     </menuitem>
+    <a href="#openModal">
     <menuitem label="Plus" class="plus">
         <span class="helper"></span>
-            <a href="#openModal"> <img src= "img/plus.png"></a>
-    </menuitem>
+        <img src= "img/plus.png">
+    </menuitem></a>
 </menu>
 
 </div>
