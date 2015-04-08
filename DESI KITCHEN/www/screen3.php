@@ -66,6 +66,15 @@ while ( $db_field = mysql_fetch_assoc($result) ) {
 
 print "<span id='inventoryitems'>" . $db_field['ItemName'] . "<BR></span>";
 
+if(isset($_POST['item'])) {
+  $itemname1 = $_POST['item'];
+
+  $sql2 = "INSERT INTO desikitchen.Inventory (ItemName, ItemUser)
+  VALUES ('{$itemname1}', '1')";
+  $result = mysql_query($sql2);
+
+}
+
 }
 
 mysql_close($db_handle);
@@ -77,6 +86,8 @@ print "Database NOT Found ";
 mysql_close($db_handle);
 
 }
+
+
 
 ?>
 </div>
@@ -94,7 +105,10 @@ $("body").html($("body").html().replace(/%20/g,'<b> </b>'));
       <a href="#close" title="Close" class="close">X</a>
       <h2>Add more items!</h2>
       <p>Here you can add more items to your inventory!</p>
-      <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+      <form method="post">
+      Item: <input type="text" name="item"><br>
+      <input type="submit">
+      </form>
     </div>
   </div>
 </html>
