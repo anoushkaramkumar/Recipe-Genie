@@ -18,6 +18,8 @@
   <meta charset="UTF-8">
   <script src="https://apis.google.com/js/client:platform.js" async defer></script>
   <script src="js/index.js" async defer></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script src="jquery.paulund_modal_box.js"></script>
 </head>
 <body style="background:#F7CB71">
   <div id="top">
@@ -42,7 +44,7 @@
         <command href="help.html" label="Help"/>
         <command href="about.html" label="About"/>
     </menuitem>
-    <a href="#openModal">
+    <a href="#" class="paulund_modal">
     <menuitem label="Plus" class="plus">
         <span class="helper"></span>
         <img src= "img/plus.png">
@@ -101,21 +103,14 @@ mysql_close($db_handle);
 </body>
 
 <script>
+$(document).ready(function(){
+  $('.paulund_modal').paulund_modal_box();
+});
 
 $("body").html($("body").html().replace(/%20/g,'<b> </b>'));
 
 </script>
 
 <a href="screen2.php" class="myButton">Make My Meal!</a>
-  <div id="openModal" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-      <h2>Add more items!</h2>
-      <p>Here you can add more items to your inventory!</p>
-      <form method="post">
-      Item: <input type="text" name="item"><br>
-      <input type="submit">
-      </form>
-    </div>
-  </div>
+
 </html>
